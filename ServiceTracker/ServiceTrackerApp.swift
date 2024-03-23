@@ -12,9 +12,9 @@ import SwiftUI
 struct ServiceTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
         }
-        .modelContainer(for: User.self)
+        .modelContainer(for: Service.self)
     }
 }
 

@@ -10,12 +10,12 @@ import SwiftData
 
 @Model
 class Service {
-    enum ServiceType: String {
+    enum ServiceType: String, Codable {
         case service = "Service"
         case plugin = "Plug-In"
     }
     
-    enum LicenseType: String {
+    enum LicenseType: String, Codable {
         case single = "Single User"
         case multi = "Multi-User"
         case floating = "Floating"
